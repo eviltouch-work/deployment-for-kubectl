@@ -17,6 +17,6 @@ spec:
         app: mongoapp
     spec:
       containers:
-      - name: mongoapp
+      - name: mongo
         # Run this image
         image: evil08/webapp:mongo
