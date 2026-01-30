@@ -8,15 +8,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongoapp
+      app: webapp
   template:
     metadata:
       labels:
         # Apply this label to pods and default
         # the Deployment label selector to this value
-        app: mongoapp
+        app: webapp
     spec:
       containers:
       - name: mongo
         # Run this image
-        image: evil08/webapp:mongo
+        image: evil08/webpage:v.01
